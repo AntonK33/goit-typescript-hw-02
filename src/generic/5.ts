@@ -3,9 +3,14 @@
   Використовуйте generics, щоб цей інтерфейс міг працювати з будь-якими типами ключів та значень.
 */
 
+
+
+
 interface KeyValuePair {
-  key;
-  value;
+  firstName: any;
+  lastName: any;
 }
+
+type ForKeyValuePair = keyof KeyValuePair;
 
 export {};

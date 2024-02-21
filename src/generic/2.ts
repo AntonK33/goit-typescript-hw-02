@@ -10,7 +10,17 @@ type AllType = {
   color: string;
   weight: number
 }
+type Qwe = Pick<AllType,'name'&'color'>
+type Ewq = Pick<AllType, 'position' & 'weight'>
 
+let top: Qwe = {
+  name:'Martin',
+  color:'Braun'
+}
+let bottom: Ewq = {
+  position:4,
+  weight:5
+}
 function compare (top, bottom): AllType {
   return {
     name: top.name,
